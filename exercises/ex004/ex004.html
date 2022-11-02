@@ -1,0 +1,35 @@
+<!--Estudos e DOM-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 82); 
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM (Document Object Model)</h1>
+    <p>É um conjunto de <strong>objetos</strong> dentro do navegador para dar acesso aos documentos do site.</p>
+    <p>Veja agora os exemplos a seguir.</p>
+    <p><strong>Resultado:</strong></p>
+    <div id="msg">Clique em mim</div>
+    <div id="msg">Clique denovo em mim</div>
+    <script>
+        var d = document.getElementById('msg')
+        var body = document.getElementsByTagName('body')[0]; //Armazenando a config body em uma variável (body), com a tagname
+        var p1 = document.getElementsByTagName('p')[0]; //Armazenando o texto do p(0) em uma variável (p1), com a tagname
+        document.write(p1.innerHTML); //Mostra o texto armazenado na variável p1
+        p1.style.color = 'yellow'; //Alterando a cor do p1
+        body.style.backgroundColor = 'gray'; //Alterando a cor do body
+        d.style.backgroundColor = 'blue'; //Alterando a cor de fundo da div
+        d.style.color = 'yellow' //Alterando a cor do texto da div
+    </script>
+    
+</body>
+</html>

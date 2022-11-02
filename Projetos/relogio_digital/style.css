@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    font-family: 'Roboto Slab', serif;
+    color: lightgray;
+}
+h1{
+    font-size: 86px;
+}
+
+h2{
+    font-size: 72px;
+}
+
+h3{
+    font-size: 64px;
+}
+
+.relogio{
+    display: flex;
+    flex-direction: row;
+    padding-top: 13%;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin-inline: 0.5%;
+    position: relative;
+    left: 26%;
+    border-radius: 15px;
+    border: solid;
+    -webkit-box-reflect: below 0 linear-gradient(transparent 30%, #1212124a);
+}
+
+#hour, #min, #seg{
+    text-align: center;
+}
+
+#hour{
+    padding-top: 35px;
+}
+
+#min{
+    padding-top: 40px;
+}
+
+#seg{
+    padding-top: 45px;
+}
+
+.buttons{
+    text-align: center;
+    padding-top: 20px;
+}
+
+button{
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons #rel{
+    padding-inline: 20px;
+    border-style: none;
+}
+
+.buttons #cro{
+    background-color: #121212;
+    color: lightgray;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
