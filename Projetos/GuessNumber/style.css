@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #070707;
+  color: rgb(243, 243, 89);
+  font-family: "Silkscreen", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .content h1 {
+  padding-bottom: 60px;
+  font-size: 42px;
+}
+body .content p {
+  padding-bottom: 10px;
+}
+body .content .input_number {
+  padding-bottom: 5px;
+}
+body .content .input_number input {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(243, 243, 89);
+  background-color: #111111;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+body .content .buttons {
+  padding-top: 60px;
+}
+body .content .buttons #guess_send {
+  font-family: "Silkscreen", sans-serif;
+  background-color: #070707;
+  border-color: rgb(243, 243, 89);
+  color: rgb(243, 243, 89);
+  padding: 5px;
+  padding-inline: 12px;
+}
+body .content .buttons #restart {
+  font-family: "Silkscreen", sans-serif;
+  background-color: #070707;
+  border-color: rgb(243, 243, 89);
+  color: rgb(243, 243, 89);
+  padding: 5px;
+}
+
+#guess_send:hover {
+  background-color: rgb(243, 243, 89);
+}/*# sourceMappingURL=style.css.map */
