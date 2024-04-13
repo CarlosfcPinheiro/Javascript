@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+$background_c: #0c0c0c;
+$font_c: rgba(255, 255, 255, 0.932);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background_c;
+    font-family: "Pixelify Sans", sans-serif;
+    color: $font_c;
+    .content{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .containertime{
+            display: flex;
+            flex-direction: row;
+            font-size: 32px;
+            align-items: center;
+        }
+        #title{
+            font-size: 28px;
+            margin-bottom: 3rem;
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+            border-style: solid;
+        }
+        #time_count_hms{
+            font-size: 56px;
+        }
+        p{
+            font-size: 20px;
+            color: rgba(182, 182, 182, 0.932);
+        }
+        .buttons{
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            #start_btn, #stop_btn, #continue_btn{
+                background-color: $background_c;
+                color: $font_c;
+                transition: 0.1s;
+            }
+            #start_btn, #reset_btn, #stop_btn, #continue_btn{
+                transition: 0.1s;
+                margin-inline: 3px;
+                font-family: "Pixelify Sans", sans-serif;
+                border-radius: 5px;
+                border-style: solid;
+                padding: 4px;
+                font-size: 16px;
+            }
+            #stop_btn{
+                display: none;
+            }
+            #continue_btn{
+                display: none;
+            }
+        }
+    }
+}
+#start_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#stop_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#continue_btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#reset_btn, #continue_btn{
+    cursor: pointer;
+}

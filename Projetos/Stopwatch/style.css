@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c0c0c;
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.932);
+}
+body .content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content .containertime {
+  display: flex;
+  flex-direction: row;
+  font-size: 32px;
+  align-items: center;
+}
+body .content #title {
+  font-size: 28px;
+  margin-bottom: 3rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+}
+body .content #time_count_hms {
+  font-size: 56px;
+}
+body .content p {
+  font-size: 20px;
+  color: rgba(182, 182, 182, 0.932);
+}
+body .content .buttons {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+body .content .buttons #start_btn, body .content .buttons #stop_btn, body .content .buttons #continue_btn {
+  background-color: #0c0c0c;
+  color: rgba(255, 255, 255, 0.932);
+  transition: 0.1s;
+}
+body .content .buttons #start_btn, body .content .buttons #reset_btn, body .content .buttons #stop_btn, body .content .buttons #continue_btn {
+  transition: 0.1s;
+  margin-inline: 3px;
+  font-family: "Pixelify Sans", sans-serif;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 4px;
+  font-size: 16px;
+}
+body .content .buttons #stop_btn {
+  display: none;
+}
+body .content .buttons #continue_btn {
+  display: none;
+}
+
+#start_btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#stop_btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#continue_btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#reset_btn, #continue_btn {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
