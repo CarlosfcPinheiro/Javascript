@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+
+    font-family: 'General Sans', sans-serif;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.content .container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    z-index: 2;
+}
+
+.container-text h1{
+    font-size: 38px;
+}
+
+.container-text p{
+    font-size: 16px;
+    font-style: italic;
+
+    color: #313131;
+}
+
+.container .button button{
+    padding: 2% 3%;
+
+    border-radius: 0.8rem;
+    border-style: solid;
+    border-color: #000000;
+
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    cursor: pointer;
+
+    background-color: rgb(228, 38, 76);
+}
+
+.button #button.jump{
+    animation: jumpbtn 0.3s;
+}
+
+@-webkit-keyframes jumpbtn{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+
+}
+
+@keyframes jumpbtn{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+#box-up{
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 100vh;
+
+    z-index: -1;
+}
+
+#box-up.show{
+    visibility: visible;
+
+    animation: showup 1s;
+    animation-delay: 200ms;
+    z-index: 1;
+}
+
+@-webkit-keyframes showup{
+    from{
+        top: 100vh;
+    }
+    to{
+        top: 0vh;
+    }
+}
+
+@keyframes showup{
+    from{
+        top: 100vh;
+    }
+    to{
+        top: 0vh;
+    }
+}
