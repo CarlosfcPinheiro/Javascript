@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body .content-container{
+    padding: 2rem 3rem;
+}
+
+.content-container .hide{
+    display: none;
+}
+
+a, input[type="submit"]{
+    background-color: rgb(86, 197, 197);
+    padding: 0.5rem 1rem;
+    
+    border-style: none;
+    border-radius: 0.2rem;
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+a:hover, input[type="submit"]:hover{
+    background-color: rgb(64, 163, 163);
+    cursor: pointer;
+}
